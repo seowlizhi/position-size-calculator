@@ -66,7 +66,7 @@ class Calculator():
             pos_dif = a-b
 
             # get size
-            self.size = abs(risk_value *  self.balance/ pos_dif)
+            self.size = abs(risk_value *  self.balance.get()/ pos_dif)
 
             self.size_label["text"] = 'Size: ' + str(self.size)
 
